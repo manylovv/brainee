@@ -1,0 +1,6 @@
+name: eslint
+on: push
+jobs:
+  my-jobs:
+    steps:
+      - run: make lint
