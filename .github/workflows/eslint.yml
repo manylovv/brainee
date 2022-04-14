@@ -6,5 +6,6 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps: 
-      - run: cd frontend-project-lvl1
-      - run: make lint
+      - name: lint with eslint
+        run: |
+          make lint
