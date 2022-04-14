@@ -1,0 +1,8 @@
+name: eslint
+
+# Controls when the workflow will run
+on: push
+jobs:
+  my-job:
+    steps:
+      - run: make lint
