@@ -1,0 +1,13 @@
+name: eslint
+
+# Controls when the workflow will run
+on: push
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: lint with eslint
+        run: |
+          make lint
