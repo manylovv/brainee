@@ -5,5 +5,5 @@ on: push
 jobs:
   My-Jobs:
     runs-on: ubuntu later
-      steps:
+    steps:
         - run: make lint
