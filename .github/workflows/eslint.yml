@@ -4,6 +4,7 @@ name: eslint
 on: push
 jobs:
   test-job:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps: 
+      - run: cd frontend-project-lvl1
       - run: make lint
