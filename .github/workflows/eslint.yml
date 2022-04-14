@@ -3,6 +3,7 @@ name: eslint
 # Controls when the workflow will run
 on: push
 jobs:
-  my-job:
-    steps:
-      - run: make lint
+  My-Jobs:
+    runs-on: ubuntu later
+      steps:
+        - run: make lint
