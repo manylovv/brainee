@@ -1,21 +1,22 @@
 import readlineSync from 'readline-sync'
 import { getName } from './cli.js'
 
-export const gameLogic = (arr) => { // на вход принимается массив, состоящий из двух массивов (вопросы и ответы)
+export const gameLogic = (func, rules) => { // на вход принимается массив, состоящий из двух массивов (вопросы и ответы)
     console.log('Welcome to the Brain Games!')
     const name = getName()
     console.log(`Hello, ${name}!`)
 
-    console.log(arr[2]) // правила игры
-
+    console.log(rules) // правила игры
+    let arr = []
     for (let i = 0; i < 3; i += 1) {
-        console.log(`Question: ${arr[0][i]}`)
+        arr = func()
+        console.log(`Question: ${arr[0]}`)
         const answer = readlineSync.question("Your answer: ")
 
-        if (answer === arr[1][i]) {
+        if (answer === arr[1]) {
             console.log('Correct!')
         } else {
-            return `'${answer}' is wrong answer ;(. Correct answer was '${arr[1][i]}'.\nLet's try again, ${name}!`
+            return `'${answer}' is wrong answer ;(. Correct answer was '${arr[1]}'.\nLet's try again, ${name}!`
         }
     }
     return `Congratulations, ${name}!`

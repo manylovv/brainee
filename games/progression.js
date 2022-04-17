@@ -4,8 +4,11 @@ function randomInteger(min, max) {
     return Math.floor(result)
 }
 
-const getProgression = () => {
-    const arr = []
+export const gameRules = 'What number is missing in the progression?'
+
+export const brainProgressionGame = () => {
+    const resultArray = []
+    const progression = []
     let hidden = ''
 
     const num1 = randomInteger(1, 100)
@@ -13,26 +16,14 @@ const getProgression = () => {
 
     const randomIndex = randomInteger(0, 6)
     for (let i = 0; i <= 6; i++) {
-        arr.push(String(num1 + step * (i + 1)))
+        progression.push(String(num1 + step * (i + 1)))
         if (i === randomIndex) {
-            hidden = String(arr[i])
-            arr[i] = '..'
+            hidden = String(progression[i])
+            progression[i] = '..'
         }
     }
-    const result = arr.join(' ')
-    return [result, hidden]
-}
+    resultArray.push(progression.join(' '))
+    resultArray.push(hidden)
 
-export const brainProgressionGame = () => {
-    const arrQuestions = []
-    const arrAnswers = []
-    const gameRules = 'What number is missing in the progression?'
-
-    for (let i = 0; i < 3; i++) {
-        let progression = getProgression()
-
-        arrQuestions.push(progression[0])
-        arrAnswers.push(progression[1])
-    }
-    return [arrQuestions, arrAnswers, gameRules]
+    return resultArray
 }

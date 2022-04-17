@@ -3,30 +3,26 @@ const getRandomOperator = () => {
     const random = Math.floor((Math.random() * arrOperators.length))
     return arrOperators[random]
 }
+export const gameRules = "What is the result of the expression?"
 
 export const brainCalcGame = () => {
-    const arrQuestions = []
-    const arrAnswers = []
-    const gameRules = "What is the result of the expression?"
+    const arr = []
+    const num1 = (Math.ceil(Math.random() * 15))
+    const num2 = (Math.ceil(Math.random() * 15))
+    const randomOperator = getRandomOperator()
 
-    for (let i = 0; i < 3; i++) {
-        let numRandom1 = (Math.ceil(Math.random() * 15))
-        let numRandom2 = (Math.ceil(Math.random() * 15))
-        let randomOperator = getRandomOperator()
-        arrQuestions.push(`${numRandom1} ${randomOperator} ${numRandom2}`)
+    arr.push(`${num1} ${randomOperator} ${num2}`)
 
-        switch (randomOperator) {
-            case "+":
-                arrAnswers.push(String(numRandom1 + numRandom2))
-                break
-            case "-":
-                arrAnswers.push(String(numRandom1 - numRandom2))
-                break
-            case "*":
-                arrAnswers.push((numRandom1 * numRandom2))
-                break
-        }
+    switch (randomOperator) {
+        case "+":
+            arr.push(String(num1 + num2))
+            break
+        case "-":
+            arr.push(String(num1 - num2))
+            break
+        case "*":
+            arr.push(String(num1 * num2))
+            break
     }
-
-    return [arrQuestions, arrAnswers, gameRules]
+    return arr
 }
