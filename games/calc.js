@@ -23,7 +23,7 @@ export const brainCalcGame = () => {
                 arrAnswers.push(String(numRandom1 - numRandom2))
                 break
             case "*":
-                arrAnswers.push(String(numRandom1 * numRandom2))
+                arrAnswers.push((numRandom1 * numRandom2))
                 break
         }
     }
