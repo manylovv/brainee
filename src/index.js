@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getName } from './cli.js';
+import getName from './cli.js';
 
 // на вход принимается массив, состоящий из двух массивов (вопросы и ответы)
 export const gameLogic = (func, rules) => { 
