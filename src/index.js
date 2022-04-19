@@ -21,4 +21,4 @@ const gameLogic = (func, rules) => {
   return `Congratulations, ${name}!`;
 };
 
-export default gameLogic
+export default gameLogic;
