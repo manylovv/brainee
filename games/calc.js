@@ -11,17 +11,17 @@ export const brainCalcGame = () => {
   const randomOperator = getRandomOperator();
   arr.push(`${num1} ${randomOperator} ${num2}`);
   switch (randomOperator) {
-    case "+":
+    case '+':
       arr.push(String(num1 + num2));
       break;
-    case "-":
+    case '-':
       arr.push(String(num1 - num2));
       break;
-    case "*":
+    case '*':
       arr.push(String(num1 * num2));
       break;
     default:
-      return null
-}
+      return null;
+  }
   return arr;
 };
