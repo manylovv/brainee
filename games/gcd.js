@@ -1,5 +1,9 @@
 const gcd = (a, b) => {
-  !b ? a : gcd(b, a % b);
+  if (!b) {
+    return a;
+  } else {
+    return gcd(b, a % b);
+  }
 };
 export const gameRules = 'Find the greatest common divisor of given numbers.';
 export const brainGCDGame = () => {
