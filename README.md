@@ -3,3 +3,13 @@
 [![Linter](https://github.com/manylovv/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/manylovv/frontend-project-lvl1/actions/workflows/linter.yml)
 ### Codeclimate:
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+### Even or odd:
+[![asciicast](https://asciinema.org/a/OfLYokz1NTd6BwwKnpybQDqz3.svg)](https://asciinema.org/a/OfLYokz1NTd6BwwKnpybQDqz3)
+### Calculator:
+[![asciicast](https://asciinema.org/a/ZzTYjAw2mhGrUMJr3xaLBAB3R.svg)](https://asciinema.org/a/ZzTYjAw2mhGrUMJr3xaLBAB3R)
+### GCD:
+[![asciicast](https://asciinema.org/a/hhJoTYxvZ5bjeSffNUyohYp06.svg)](https://asciinema.org/a/hhJoTYxvZ5bjeSffNUyohYp06)
+### Progressoin:
+[![asciicast](https://asciinema.org/a/CulUoIyOf1Gd6WU9KPBTCEKUO.svg)](https://asciinema.org/a/CulUoIyOf1Gd6WU9KPBTCEKUO)
+### Is prime?:
+[![asciicast](https://asciinema.org/a/yISnMR8JbWCjse8diK2mhfzjy.svg)](https://asciinema.org/a/yISnMR8JbWCjse8diK2mhfzjy)
