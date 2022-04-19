@@ -1,4 +1,4 @@
-const  randomInteger = (min, max) => {
+const randomInteger = (min, max) => {
   // случайное число от min до (max+1)
   const result = min + Math.random() * (max + 1 - min);
   return Math.floor(result);
@@ -7,7 +7,7 @@ export const gameRules = 'What number is missing in the progression?';
 export const brainProgressionGame = () => {
   const resultArray = [];
   const progression = [];
-  let hidden = ''; 
+  let hidden = '';
   const num1 = randomInteger(1, 100);
   const step = randomInteger(1, 11);
   const randomIndex = randomInteger(0, 6);

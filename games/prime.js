@@ -1,6 +1,6 @@
 const isPrime = (num) => {
   const limit = Math.sqrt(num);
-  for (let i = 2; i <= limit; ++i) {
+  for (let i = 2; i <= limit; i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -9,7 +9,7 @@ const isPrime = (num) => {
 };
 export const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 export const brainPrimeGame = () => {
-   const arr = [];
+  const arr = [];
   const num = (Math.ceil(Math.random() * 100));
   arr.push(num);
   if (isPrime(num)) {
