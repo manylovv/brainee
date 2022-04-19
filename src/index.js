@@ -1,7 +1,10 @@
 import readlineSync from 'readline-sync';
 import getName from './cli.js';
 
-// на вход принимается массив, состоящий из двух массивов (вопросы и ответы)
+// на вход принимается функция, возвращающая массив,
+// состоящий из двух элементов (вопрос и ответ), 
+// которая затем вызывается несколько раз (в зависимости от количества раундов в игре)
+// (в нашем случае 3 раза)
 const gameLogic = (func, rules) => {
   console.log('Welcome to the Brain Games!');
   const name = getName();
