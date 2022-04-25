@@ -15,4 +15,3 @@ const brainEvenLogic = () => {
 
 const brainEvenGame = () => gameLogic(brainEvenLogic, gameRules);
 export default brainEvenGame;
-
