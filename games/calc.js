@@ -1,27 +1,33 @@
+import { getRandomNumber } from '../src/utils.js';
+import { gameLogic } from '../src/index.js';
+
 const getRandomOperator = () => {
-  const arrOperators = ['+', '-', '*'];
-  const random = Math.floor((Math.random() * arrOperators.length));
-  return arrOperators[random];
+    const arrOperators = ['+', '-', '*'];
+    return arrOperators[getRandomNumber(0, arrOperators.length - 1)];
 };
-export const gameRules = 'What is the result of the expression?';
+
+const gameRules = 'What is the result of the expression?';
+const brainCalcLogic = () => {
+    const arr = [];
+    const num1 = getRandomNumber(2, 10)
+    const num2 = getRandomNumber(2, 10)
+    const randomOperator = getRandomOperator();
+    arr.push(`${num1} ${randomOperator} ${num2}`);
+    switch (randomOperator) {
+        case '+':
+            arr.push(String(num1 + num2));
+            break;
+        case '-':
+            arr.push(String(num1 - num2));
+            break;
+        case '*':
+            arr.push(String(num1 * num2));
+            break;
+        default:
+            return null;
+    }
+    return arr;
+};
 export const brainCalcGame = () => {
-  const arr = [];
-  const num1 = (Math.ceil(Math.random() * 15));
-  const num2 = (Math.ceil(Math.random() * 15));
-  const randomOperator = getRandomOperator();
-  arr.push(`${num1} ${randomOperator} ${num2}`);
-  switch (randomOperator) {
-    case '+':
-      arr.push(String(num1 + num2));
-      break;
-    case '-':
-      arr.push(String(num1 - num2));
-      break;
-    case '*':
-      arr.push(String(num1 * num2));
-      break;
-    default:
-      return null;
-  }
-  return arr;
-};
+    return gameLogic(brainCalcLogic, gameRules)
+}

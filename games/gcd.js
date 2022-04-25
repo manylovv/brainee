@@ -1,15 +1,22 @@
+import { getRandomNumber } from '../src/utils.js';
+import { gameLogic } from '../src/index.js';
+
 const gcd = (a, b) => {
   if (!b) {
     return a;
   }
   return gcd(b, a % b);
 };
-export const gameRules = 'Find the greatest common divisor of given numbers.';
-export const brainGCDGame = () => {
+const gameRules = 'Find the greatest common divisor of given numbers.';
+const brainGCDLogic = () => {
   const arr = [];
-  const num1 = (Math.ceil(Math.random() * 20 + 2));
-  const num2 = (Math.ceil(Math.random() * 50));
+  const num1 = getRandomNumber(1, 20);
+  const num2 = getRandomNumber(1, 100);
   arr.push(`${num1} ${num2}`);
   arr.push(String(gcd(num1, num2)));
   return arr;
+};
+
+export const brainGCDGame = () => {
+  return gameLogic(brainGCDLogic, gameRules)
 };
