@@ -13,6 +13,6 @@ const brainEvenLogic = () => {
   return arr;
 };
 
-export const brainEvenGame = () => {
-  return gameLogic(brainEvenLogic, gameRules)
-};
+const brainEvenGame = () => gameLogic(brainEvenLogic, gameRules);
+export default brainEvenGame;
+

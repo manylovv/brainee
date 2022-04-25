@@ -23,6 +23,5 @@ const brainPrimeLogic = () => {
   return arr;
 };
 
-export const brainPrimeGame = () => {
-  return gameLogic(brainPrimeLogic, gameRules)
-};
+const brainPrimeGame = () => gameLogic(brainPrimeLogic, gameRules);
+export default brainPrimeGame;

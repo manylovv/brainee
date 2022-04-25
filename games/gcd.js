@@ -17,6 +17,5 @@ const brainGCDLogic = () => {
   return arr;
 };
 
-export const brainGCDGame = () => {
-  return gameLogic(brainGCDLogic, gameRules)
-};
+const brainGCDGame = () => gameLogic(brainGCDLogic, gameRules);
+export default brainGCDGame;

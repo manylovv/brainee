@@ -21,6 +21,5 @@ const brainProgressionLogic = () => {
   return resultArray;
 };
 
-export const brainProgressionGame = () => {
-  return gameLogic(brainProgressionLogic, gameRules)
-};
+const brainProgressionGame = () => gameLogic(brainProgressionLogic, gameRules);
+export default brainProgressionGame;
