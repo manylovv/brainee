@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../src/utils.js';
+import getRandomNumber from '../src/utils.js';
 import { gameLogic } from '../src/index.js';
 
 const getRandomOperator = () => {
