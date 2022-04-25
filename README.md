@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/manylovv/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/manylovv/frontend-project-lvl1/actions)
 [![Linter](https://github.com/manylovv/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/manylovv/frontend-project-lvl1/actions/workflows/linter.yml)
 ### Codeclimate:
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/github/manylovv/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/199aa295dadfdc93ee92/maintainability" /></a>
 ### Even or odd:
 [![asciicast](https://asciinema.org/a/OfLYokz1NTd6BwwKnpybQDqz3.svg)](https://asciinema.org/a/OfLYokz1NTd6BwwKnpybQDqz3)
 ### Calculator:
