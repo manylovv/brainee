@@ -6,7 +6,7 @@ const isEven = (number) => {
     return 'yes';
   }
   return 'no';
-}
+};
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const brainEvenLogic = () => {
