@@ -1,8 +1,12 @@
-import getRandomNumber from '../utils.js';
-import { getResultObject } from '../utils.js';
+import { getResultObject, getRandomNumber } from '../utils.js';
 import { gameLogic } from '../index.js';
 
-const isEven = (number) => number % 2 === 0 ? 'yes' : 'no';
+const isEven = (number) => {
+  if (number % 2 === 0) {
+    return 'yes';
+  }
+  return 'no';
+}
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const brainEvenLogic = () => {

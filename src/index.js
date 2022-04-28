@@ -4,7 +4,7 @@ export const gameLogic = (func, description) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(description); 
+  console.log(description);
   let questionAndAnswer = {};
   for (let i = 0; i < 3; i += 1) {
     questionAndAnswer = func();

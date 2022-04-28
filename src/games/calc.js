@@ -1,5 +1,4 @@
-import getRandomNumber from '../utils.js';
-import { getResultObject } from '../utils.js';
+import { getResultObject, getRandomNumber } from '../utils.js';
 import { gameLogic } from '../index.js';
 
 const getRandomOperator = () => {
@@ -28,7 +27,7 @@ const brainCalcLogic = () => {
 
   const question = `${number1} ${randomOperator} ${number2}`;
   const answer = getСalculationResult(number1, number2, randomOperator);
-  const result = getResultObject(question, answer)
+  const result = getResultObject(question, answer);
   return result;
 };
 

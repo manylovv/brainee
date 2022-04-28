@@ -1,5 +1,4 @@
-import getRandomNumber from '../utils.js';
-import { getResultObject } from '../utils.js';
+import { getResultObject, getRandomNumber } from '../utils.js';
 import { gameLogic } from '../index.js';
 
 const isPrime = (num) => {

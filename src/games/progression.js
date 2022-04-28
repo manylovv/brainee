@@ -1,5 +1,4 @@
-import getRandomNumber from '../utils.js';
-import { getResultObject } from '../utils.js';
+import { getResultObject, getRandomNumber } from '../utils.js';
 import { gameLogic } from '../index.js';
 
 const getProgression = () => {
@@ -15,15 +14,14 @@ const getProgression = () => {
       progression[i] = '..';
     }
   }
-  const resultProgression = progression.join(' ')
-  return {question: resultProgression, answer: answer}
+  const resultProgression = progression.join(' ');
+  return { question: resultProgression, answer: answer };
 };
 
 const description = 'What number is missing in the progression?';
 const brainProgressionLogic = () => {
-  const progression = getProgression()
-  const question = progression.question;
-  const answer = progression.answer;
+  const progression = getProgression();
+  const {question, answer} = progression;
   const result = getResultObject(question, answer);
   return result;
 };

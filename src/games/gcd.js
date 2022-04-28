@@ -1,5 +1,4 @@
-import getRandomNumber from '../utils.js';
-import { getResultObject } from '../utils.js';
+import { getResultObject, getRandomNumber } from '../utils.js';
 import { gameLogic } from '../index.js';
 
 const getGCD = (a, b) => {
@@ -14,7 +13,7 @@ const brainGCDLogic = () => {
   const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
   const answer = String(getGCD(number1, number2));
-  const result = getResultObject(question, answer)
+  const result = getResultObject(question, answer);
   return result;
 };
 
