@@ -1,5 +1,5 @@
-import { getResultObject, getRandomNumber } from '../utils.js';
-import { gameLogic } from '../index.js';
+import { getRandomNumber } from '../utils.js';
+import { getGameLogic } from '../index.js';
 
 const isPrime = (num) => {
   const limit = Math.sqrt(num);
@@ -11,21 +11,14 @@ const isPrime = (num) => {
   return true;
 };
 
-const getAnswer = (number) => {
-  if (isPrime(number)) {
-    return 'yes';
-  }
-  return 'no';
-};
-
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const brainPrimeLogic = () => {
+const getBrainPrimeLogic = () => {
   const number = getRandomNumber(2, 100);
   const question = String(number);
-  const answer = getAnswer(number);
-  const result = getResultObject(question, answer);
+  const answer = isPrime(number) ? 'yes' : 'no';
+  const result = { question, answer };
   return result;
 };
 
-const startBrainPrimeGame = () => gameLogic(brainPrimeLogic, description);
+const startBrainPrimeGame = () => getGameLogic(getBrainPrimeLogic, description);
 export default startBrainPrimeGame;

@@ -1,12 +1,12 @@
-import { getResultObject, getRandomNumber } from '../utils.js';
-import { gameLogic } from '../index.js';
+import { getRandomNumber } from '../utils.js';
+import { getGameLogic } from '../index.js';
 
 const getRandomOperator = () => {
-  const arrOperators = ['+', '-', '*'];
-  return arrOperators[getRandomNumber(0, arrOperators.length - 1)];
+  const operators = ['+', '-', '*'];
+  return operators[getRandomNumber(0, operators.length - 1)];
 };
 
-const getСalculationResult = (number1, number2, operator) => {
+const calculate = (number1, number2, operator) => {
   switch (operator) {
     case '+':
       return String(number1 + number2);
@@ -15,21 +15,21 @@ const getСalculationResult = (number1, number2, operator) => {
     case '*':
       return String(number1 * number2);
     default:
-      return null;
+      throw new Error('Unknown state!');
   }
 };
 
 const description = 'What is the result of the expression?';
-const brainCalcLogic = () => {
+const getBrainCalcLogic = () => {
   const number1 = getRandomNumber(2, 10);
   const number2 = getRandomNumber(2, 10);
   const randomOperator = getRandomOperator();
 
   const question = `${number1} ${randomOperator} ${number2}`;
-  const answer = getСalculationResult(number1, number2, randomOperator);
-  const result = getResultObject(question, answer);
+  const answer = calculate(number1, number2, randomOperator);
+  const result = { question, answer };
   return result;
 };
 
-const startBrainCalcGame = () => gameLogic(brainCalcLogic, description);
+const startBrainCalcGame = () => getGameLogic(getBrainCalcLogic, description);
 export default startBrainCalcGame;
