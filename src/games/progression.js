@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../utils.js';
+import getRandomNumber from '../utils.js';
 import { getGameLogic } from '../index.js';
 
 const getProgression = () => {
@@ -23,8 +23,8 @@ const getProgression = () => {
 const description = 'What number is missing in the progression?';
 const getBrainProgressionLogic = () => {
   const progression = getProgression();
-  const question = progression.progressionWithHiddenElement
-  const answer = progression.hiddenElement
+  const question = progression.progressionWithHiddenElement;
+  const answer = progression.hiddenElement;
   const result = { question, answer };
   return result;
 };

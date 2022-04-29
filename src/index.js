@@ -9,7 +9,7 @@ export const getGameLogic = (brainGamelogicFunction, description) => {
   let questionAndAnswer = {};
   for (let i = 0; i < 3; i += 1) {
     questionAndAnswer = brainGamelogicFunction();
-    
+
     console.log(`Question: ${questionAndAnswer.question}`);
     const answer = readlineSync.question('Your answer: ');
 
