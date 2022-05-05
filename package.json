@@ -1,35 +1,36 @@
 {
-    "name": "@hexlet/code",
-    "version": "1.0.0",
-    "description": "brain-games is a program which allows you to run simple math games in the terminal",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/manylovv/frontend-project-lvl1.git"
-    },
-    "author": "manylov",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/manylovv/frontend-project-lvl1/issues"
-    },
-    "homepage": "https://github.com/manylovv/frontend-project-lvl1#readme",
-    "type": "module",
-    "bin": {
-        "brain-games": "bin/brain-games.js",
-        "brain-even": "bin/brain-even.js",
-        "brain-calc": "bin/brain-calc.js",
-        "brain-gcd": "bin/brain-gcd.js",
-        "brain-progression": "bin/brain-progression.js",
-        "brain-prime": "bin/brain-prime.js"
-    },
-    "dependencies": {
-        "readline-sync": "^1.4.10"
-    },
-    "devDependencies": {
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint": "^8.13.0"
-    }
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "brain-games is a program which allows you to run simple math games in the terminal",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manylovv/frontend-project-lvl1.git"
+  },
+  "author": "manylov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manylovv/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/manylovv/frontend-project-lvl1#readme",
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint": "^8.13.0"
+  },
+  "main": "index.js"
 }

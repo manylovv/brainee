@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const getGameLogic = (brainGamelogicFunction, description) => {
+const runEngine = (brainGameFunction, description) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -8,7 +8,7 @@ export const getGameLogic = (brainGamelogicFunction, description) => {
 
   let questionAndAnswer = {};
   for (let i = 0; i < 3; i += 1) {
-    questionAndAnswer = brainGamelogicFunction();
+    questionAndAnswer = brainGameFunction();
 
     console.log(`Question: ${questionAndAnswer.question}`);
     const answer = readlineSync.question('Your answer: ');
@@ -22,4 +22,4 @@ export const getGameLogic = (brainGamelogicFunction, description) => {
   return `Congratulations, ${name}!`;
 };
 
-export default getGameLogic;
+export default runEngine;

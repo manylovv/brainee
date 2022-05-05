@@ -1,9 +1,10 @@
 import getRandomNumber from '../utils.js';
-import { getGameLogic } from '../index.js';
+import runEngine from '../index.js';
 
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
-  return operators[getRandomNumber(0, operators.length - 1)];
+  const randomIndex = getRandomNumber(0, operators.length - 1)
+  return operators[randomIndex];
 };
 
 const calculate = (number1, number2, operator) => {
@@ -15,12 +16,12 @@ const calculate = (number1, number2, operator) => {
     case '*':
       return String(number1 * number2);
     default:
-      throw new Error('Unknown state!');
+      throw new Error(`Unknown operator: '${operator}!'`)
   }
 };
 
 const description = 'What is the result of the expression?';
-const getBrainCalcLogic = () => {
+const getBrainCalc = () => {
   const number1 = getRandomNumber(2, 10);
   const number2 = getRandomNumber(2, 10);
   const randomOperator = getRandomOperator();
@@ -31,5 +32,5 @@ const getBrainCalcLogic = () => {
   return result;
 };
 
-const startBrainCalcGame = () => getGameLogic(getBrainCalcLogic, description);
+const startBrainCalcGame = () => runEngine(getBrainCalc, description);
 export default startBrainCalcGame;
