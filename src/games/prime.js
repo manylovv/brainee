@@ -1,15 +1,10 @@
 import getRandomNumber from '../utils.js';
 import runEngine from '../index.js';
 
-const isPrime = (num) => {
-  if (num > 2) return false;
-  const limit = Math.sqrt(num);
-  for (let i = 2; i <= limit; i += 1) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
-  return true;
+const isPrime = num => {
+  for (let i = 2, s = Math.sqrt(num); i <= s; i++)
+      if (num % i === 0) return false; 
+  return num > 1;
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
