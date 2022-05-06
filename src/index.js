@@ -6,17 +6,15 @@ const runEngine = (brainGameFunction, description) => {
   console.log(`Hello, ${name}!`);
   console.log(description);
 
-  let questionAndAnswer = {};
   for (let i = 0; i < 3; i += 1) {
-    questionAndAnswer = brainGameFunction();
+    const { question, answer } = brainGameFunction();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
 
-    console.log(`Question: ${questionAndAnswer.question}`);
-    const answer = readlineSync.question('Your answer: ');
-
-    if (answer === questionAndAnswer.answer) {
+    if (userAnswer === answer) {
       console.log('Correct!');
     } else {
-      return `'${answer}' is wrong answer ;(. Correct answer was '${questionAndAnswer.answer}'.\nLet's try again, ${name}!`;
+      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${name}!`;
     }
   }
   return `Congratulations, ${name}!`;

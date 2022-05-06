@@ -3,7 +3,7 @@ import runEngine from '../index.js';
 
 const getProgression = () => {
   const progression = [];
-  const number = getRandomNumber(1, 100);
+  const number = getRandomNumber(1, 50);
   const step = getRandomNumber(1, 11);
   const progressionLength = 6;
   for (let i = 0; i <= progressionLength; i += 1) {
