@@ -3,7 +3,7 @@ import runEngine from '../index.js';
 
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
-  const randomIndex = getRandomNumber(0, operators.length - 1)
+  const randomIndex = getRandomNumber(0, operators.length - 1);
   return operators[randomIndex];
 };
 
@@ -16,7 +16,7 @@ const calculate = (number1, number2, operator) => {
     case '*':
       return String(number1 * number2);
     default:
-      throw new Error(`Unknown operator: '${operator}!'`)
+      throw new Error(`Unknown operator: '${operator}!'`);
   }
 };
 

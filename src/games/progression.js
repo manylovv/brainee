@@ -12,11 +12,11 @@ const getProgression = () => {
   return progression;
 };
 
-const hideElementOfProgression  = (progression) => {
-  const resultProgression = progression.slice()
+const hideElementOfProgression = (progression) => {
+  const resultProgression = progression.slice();
   const randomIndex = getRandomNumber(0, progression.length - 1);
   const hiddenElement = '..';
-  for (let i = 0; i < progression.length; i += 1)  {
+  for (let i = 0; i < progression.length; i += 1) {
     if (i === randomIndex) {
       resultProgression[i] = hiddenElement;
     }
@@ -27,10 +27,12 @@ const hideElementOfProgression  = (progression) => {
 const getHiddenElement = (progression) => {
   let result = ''
   const hiddenElement = '..';
-  const length = progression.length;
+  const { length } = progression
   for (let i = 0; i < length; i += 1) {
     if (progression[i] === hiddenElement) {
-      const difference = (i > length / 2) ? +progression[1] - +progression[0] : +progression[length - 1] - +progression[length - 2];
+      const difference = (i > length / 2) ?
+      +progression[1] - +progression[0] :
+      +progression[length - 1] - +progression[length - 2];
       result = (i === 0) ? +progression[i + 1] - difference : +progression[i - 1] + difference;
     }
   }
