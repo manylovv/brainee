@@ -25,14 +25,14 @@ const hideElementOfProgression = (progression) => {
 };
 
 const getHiddenElement = (progression) => {
-  let result = ''
+  let result = '';
   const hiddenElement = '..';
-  const { length } = progression
+  const { length } = progression;
   for (let i = 0; i < length; i += 1) {
     if (progression[i] === hiddenElement) {
-      const difference = (i > length / 2) ?
-      +progression[1] - +progression[0] :
-      +progression[length - 1] - +progression[length - 2];
+      const difference = (i > length / 2)
+      ? +progression[1] - +progression[0]
+      : +progression[length - 1] - +progression[length - 2];
       result = (i === 0) ? +progression[i + 1] - difference : +progression[i - 1] + difference;
     }
   }
