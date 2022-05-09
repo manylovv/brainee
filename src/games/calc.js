@@ -20,7 +20,7 @@ const getBrainCalc = () => {
   const number2 = getRandomNumber(2, 15);
   const operators = ['+', '-', '*'];
   const randomIndex = getRandomNumber(0, operators.length - 1);
-  const randomOperator = operators[randomIndex]
+  const randomOperator = operators[randomIndex];
 
   const question = `${number1} ${randomOperator} ${number2}`;
   const answer = calculate(number1, number2, randomOperator).toString();

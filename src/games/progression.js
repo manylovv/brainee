@@ -15,14 +15,15 @@ const getBrainProgression = () => {
   const hiddenElementIndex = getRandomNumber(0, progression.length - 1);
   let hiddenElement = '';
 
-  progression.map((n, i) => {
+  const hide = progression.map((n, i) => {
     if (progression.indexOf(n) === hiddenElementIndex) {
       hiddenElement = n;
       progression[i] = '..';
     }
+    return n
   });
 
-  const question = progression.join(' ');
+  const question = hide.join(' ');
   const answer = hiddenElement;
   return { question, answer };
 };
