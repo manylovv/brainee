@@ -20,7 +20,7 @@ const getBrainProgression = () => {
       hiddenElement = n;
       progression[i] = '..';
     }
-    return n
+    return n;
   });
 
   const question = progression.join(' ');
