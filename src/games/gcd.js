@@ -12,9 +12,8 @@ const getBrainGCD = () => {
   const number1 = getRandomNumber(1, 20);
   const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
-  const answer = String(getGCD(number1, number2));
-  const result = { question, answer };
-  return result;
+  const answer = getGCD(number1, number2).toString();
+  return { question, answer };
 };
 
 const startBrainGCDGame = () => runEngine(getBrainGCD, description);

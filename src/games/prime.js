@@ -13,10 +13,9 @@ const isPrime = (number) => {
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const getBrainPrime = () => {
   const number = getRandomNumber(1, 100);
-  const question = String(number);
+  const question = number.toString();
   const answer = isPrime(number) ? 'yes' : 'no';
-  const result = { question, answer };
-  return result;
+  return { question, answer };
 };
 
 const startBrainPrimeGame = () => runEngine(getBrainPrime, description);
