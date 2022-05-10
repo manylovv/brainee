@@ -2,4 +2,4 @@
 
 import startBrainEvenGame from '../src/games/even.js';
 
-console.log(startBrainEvenGame());
+startBrainEvenGame();

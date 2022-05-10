@@ -10,5 +10,5 @@ const getBrainEven = () => {
   return { question, answer };
 };
 
-const startBrainEvenGame = () => runEngine(getBrainEven, description);
+const startBrainEvenGame = () => console.log(runEngine(getBrainEven, description));
 export default startBrainEvenGame;

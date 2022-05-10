@@ -2,4 +2,4 @@
 
 import startBrainProgressionGame from '../src/games/progression.js';
 
-console.log(startBrainProgressionGame());
+startBrainProgressionGame();

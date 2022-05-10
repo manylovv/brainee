@@ -18,5 +18,5 @@ const getBrainPrime = () => {
   return { question, answer };
 };
 
-const startBrainPrimeGame = () => runEngine(getBrainPrime, description);
+const startBrainPrimeGame = () => console.log(runEngine(getBrainPrime, description));
 export default startBrainPrimeGame;

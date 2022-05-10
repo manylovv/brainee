@@ -16,5 +16,5 @@ const getBrainGCD = () => {
   return { question, answer };
 };
 
-const startBrainGCDGame = () => runEngine(getBrainGCD, description);
+const startBrainGCDGame = () => console.log(runEngine(getBrainGCD, description));
 export default startBrainGCDGame;

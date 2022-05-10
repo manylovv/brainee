@@ -1,32 +1,27 @@
 import getRandomNumber from '../utils.js';
 import runEngine from '../index.js';
 
-const getProgression = (length) => {
-  const number = getRandomNumber(1, 25);
-  const step = getRandomNumber(1, 9);
-  const progression = Array(length).fill(0).map((n, i) => (n + number + (i * step)).toString());
-  return progression;
-};
+const getProgression = (start, step, length) => Array(length)
+  .fill(0)
+  .map((n, i) => (n + start + (i * step))
+    .toString());
+
 
 const description = 'What number is missing in the progression?';
 const getBrainProgression = () => {
   const progressionLength = getRandomNumber(5, 7);
-  const progression = getProgression(progressionLength);
-  const hiddenElementIndex = getRandomNumber(0, progression.length - 1);
-  let hiddenElement = '';
+  const progressionStep = getRandomNumber(1, 9);
+  const progressionStart = getRandomNumber(1, 25);
+  const progression = getProgression(progressionStart, progressionStep, progressionLength);
 
-  progression.map((n, i) => {
-    if (progression.indexOf(n) === hiddenElementIndex) {
-      hiddenElement = n;
-      progression[i] = '..';
-    }
-    return n;
-  });
+  const hiddenElementIndex = getRandomNumber(0, progression.length - 1);
+  const hiddenElement = progression[hiddenElementIndex]
+  progression[hiddenElementIndex] = '..';
 
   const question = progression.join(' ');
   const answer = hiddenElement;
   return { question, answer };
 };
 
-const startBrainProgressionGame = () => runEngine(getBrainProgression, description);
+const startBrainProgressionGame = () => console.log(runEngine(getBrainProgression, description));
 export default startBrainProgressionGame;

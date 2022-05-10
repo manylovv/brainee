@@ -27,5 +27,5 @@ const getBrainCalc = () => {
   return { question, answer };
 };
 
-const startBrainCalcGame = () => runEngine(getBrainCalc, description);
+const startBrainCalcGame = () => console.log(runEngine(getBrainCalc, description));
 export default startBrainCalcGame;
