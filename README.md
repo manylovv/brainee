@@ -4,12 +4,11 @@
 ### Codeclimate:
 <a href="https://codeclimate.com/github/manylovv/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/199aa295dadfdc93ee92/maintainability" /></a>
 ### Even or odd:
-[![asciicast](https://asciinema.org/a/OfLYokz1NTd6BwwKnpybQDqz3.svg)](https://asciinema.org/a/OfLYokz1NTd6BwwKnpybQDqz3)
+[![asciicast](https://asciinema.org/a/adVqAWafmnpGkMDsodOjTdF1r.svg)](https://asciinema.org/a/adVqAWafmnpGkMDsodOjTdF1r)
 ### Calculator:
-[![asciicast](https://asciinema.org/a/ZzTYjAw2mhGrUMJr3xaLBAB3R.svg)](https://asciinema.org/a/ZzTYjAw2mhGrUMJr3xaLBAB3R)
-### GCD:
-[![asciicast](https://asciinema.org/a/hhJoTYxvZ5bjeSffNUyohYp06.svg)](https://asciinema.org/a/hhJoTYxvZ5bjeSffNUyohYp06)
+[![asciicast](https://asciinema.org/a/Wge3TwhINnNAGomE9dvSF0Aga.svg)](https://asciinema.org/a/Wge3TwhINnNAGomE9dvSF0Aga)
+### GCD:[![asciicast](https://asciinema.org/a/bKEDN49aF6uEsaCjikSlQzZGT.svg)](https://asciinema.org/a/bKEDN49aF6uEsaCjikSlQzZGT)
 ### Progressoin:
-[![asciicast](https://asciinema.org/a/CulUoIyOf1Gd6WU9KPBTCEKUO.svg)](https://asciinema.org/a/CulUoIyOf1Gd6WU9KPBTCEKUO)
+[![asciicast](https://asciinema.org/a/vatukUEvQACq7eOJXDAg6wHz9.svg)](https://asciinema.org/a/vatukUEvQACq7eOJXDAg6wHz9)
 ### Is prime?:
-[![asciicast](https://asciinema.org/a/yISnMR8JbWCjse8diK2mhfzjy.svg)](https://asciinema.org/a/yISnMR8JbWCjse8diK2mhfzjy)
+[![asciicast](https://asciinema.org/a/FAIbz4AfkagyoBKGVVcLf01GV.svg)](https://asciinema.org/a/FAIbz4AfkagyoBKGVVcLf01GV)
