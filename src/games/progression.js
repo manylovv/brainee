@@ -3,7 +3,7 @@ import runEngine from '../index.js';
 
 const getProgression = (start, step, length) => Array(length)
   .fill(0)
-  .map((n, i) => (n + start + (i * step)).toString());
+  .map((_, i) => (start + (i * step)));
 
 const description = 'What number is missing in the progression?';
 const getBrainProgression = () => {
@@ -17,7 +17,7 @@ const getBrainProgression = () => {
   progression[hiddenElementIndex] = '..';
 
   const question = progression.join(' ');
-  const answer = hiddenElement;
+  const answer = hiddenElement.toString();
   return { question, answer };
 };
 
