@@ -1,20 +1,18 @@
 {
-  "name": "@hexlet/code",
+  "name": "brainee",
   "version": "1.0.0",
-  "description": "brain-games is a program which allows you to run simple math games in the terminal",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "brainee is a cli math game in which you can have fun and not let your brain fall asleep.",
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manylovv/frontend-project-lvl1.git"
+    "url": "git+https://github.com/manylovv/brainee"
   },
-  "author": "manylov",
+  "author": "manylovv",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/manylovv/frontend-project-lvl1/issues"
+    "url": "https://github.com/manylovv/brainee/issues"
   },
-  "homepage": "https://github.com/manylovv/frontend-project-lvl1#readme",
+  "homepage": "https://github.com/manylovv/brainee#readme",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",
